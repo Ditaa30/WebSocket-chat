@@ -13,15 +13,15 @@
 
 ## Langkah instalasi dan konfigurasi:
 
-## 1. Pertama, saya unduh dan instal Node.js dari https://nodejs.org
+## 1. Unduh dan instal Node.js dari https://nodejs.org
 
-## 2. Kedua, saya melakukan inisialisasi proyek dan pasang dependensi yang dibutuhkan menggunakan command prompt dengan perintah berikut :
+## 2. Melakukan inisialisasi proyek dan pasang dependensi yang dibutuhkan menggunakan command prompt dengan perintah berikut :
    
            npm init -y
    
            npm install express ws
 
-    Perintah pertama (npm init -y) akan membuat file package.json secara otomatis, sedangkan perintah kedua menginstal Express.js untuk server HTTP dan ws sebagai pustaka WebSocket.
+Perintah pertama (npm init -y) akan membuat file package.json secara otomatis, sedangkan perintah kedua menginstal Express.js untuk server HTTP dan ws sebagai pustaka WebSocket.
    
 ## 3. Membuat struktur folder proyek
 
@@ -49,31 +49,34 @@
    
 ## 7. Buka dua tab browser di alamat http://localhost:3000. Jika sudah, Kirim pesan dari salah satu tab, lalu lihat apakah pesan yang dikirim dari tab pertama muncul secara langsung di tab kedua.
 
-   Berikut adalah tampilan pada tab pertama :
+## Tampilan pada tab pertama sebagai Server :
    
-   • Pertama, kita harus isi username terlebih dahulu , disini saya isi username-nya dengan Server seperti digambar ini:
-
-     ![nama server](https://github.com/user-attachments/assets/7575f40a-33b9-422a-bf82-e26dad11ae63)
-     ![tampilan nama](https://github.com/user-attachments/assets/77c84bc7-bb27-4926-9263-a93626079001)
-
-     Maka akan muncul tampilan untuk mengirim pesannya, seperti ini :
-
-     ![tampilanserver](https://github.com/user-attachments/assets/b9467d16-a283-4e99-bf43-3281c3041e8b)
-
-   Tampilan tab kedua sebagai client :
+• Isi username terlebih dahulu , untuk username penulisan nama yang ingin dipakai opsional, kalau disini menggunakan nama (Server) seperti digambar ini:
    
-   • Untuk tampilan awalnya masih sama seperti tampilan di tab pertama tadi, yang dibedakan hanya username-nya aja. Disini saya isi username-nya dengan Client seperti digambar ini:
+   ![SERVERR](https://github.com/user-attachments/assets/e23043a4-8456-4dc0-a68c-d74656a47313)
 
-     ![NAMA](https://github.com/user-attachments/assets/ff92ba77-e24e-4e92-bcc7-b42dbe2008e0)
-     ![CLIENT](https://github.com/user-attachments/assets/d5f4fd19-82e0-4caa-83a1-61383cb40c6c)
+   ![NAME](https://github.com/user-attachments/assets/e6d4cbfd-86d2-45f2-b563-7b04a846958e)
+
+• Maka akan muncul tampilan untuk mengirim pesannya, seperti ini :
+
+   ![TAMPILAN](https://github.com/user-attachments/assets/29791e45-a3e9-4bc7-bc30-3ff529d3f1a6)
+
+## Tampilan tab kedua sebagai client :
    
-   Setelah itu, akan  muncul tampilan sama seperti tab pertama tadi :
+   • Untuk tampilan awalnya masih sama seperti tampilan di tab pertama tadi, yang dibedakan hanya username-nya saja. Disini username-nya sebagai Client seperti digambar ini :
+
+   ![NAMA](https://github.com/user-attachments/assets/ff92ba77-e24e-4e92-bcc7-b42dbe2008e0)
+     
+   ![CLIENT](https://github.com/user-attachments/assets/d5f4fd19-82e0-4caa-83a1-61383cb40c6c)
+   
+## Setelah itu, akan  muncul tampilan sama seperti tab pertama :
 
    ![client awal](https://github.com/user-attachments/assets/c6083bcf-015e-45b9-a6aa-bb3f19862f7d)
 
 ## 8. Mengirim chat dari Server ke Client
    
    ![chat](https://github.com/user-attachments/assets/1444ac46-302a-4baa-b7eb-e603d89f58d5)
+   
    ![server hallo](https://github.com/user-attachments/assets/f351640e-3cdb-4a52-8c92-2d2e3759bb4d)
    
 ## 9. Tampilan pada halaman Client jika pesan sudah terkirim dari Server :
@@ -82,11 +85,11 @@
    
 ## 10. Mencoba membalas pesan dari Client ke Server :
 
-    ![gantianchat](https://github.com/user-attachments/assets/9a5c952c-7783-49d5-b4d4-3005a7674a81)
+   ![gantianchat](https://github.com/user-attachments/assets/9a5c952c-7783-49d5-b4d4-3005a7674a81)
 
-    Tampilan Server jika Client membalas pesannya :
+## Tampilan Server jika Client membalas pesannya :
 
-    ![BALESANSERVER](https://github.com/user-attachments/assets/51d5b46d-68bc-4f12-953a-e521e6c88215)
+   ![BALESANSERVER](https://github.com/user-attachments/assets/51d5b46d-68bc-4f12-953a-e521e6c88215)
 
 ## SELESAI
 
