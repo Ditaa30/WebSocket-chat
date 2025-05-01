@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat WebSocket</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    #chat li.saya { color: blue; font-weight: bold; }
+    #chat li.lain { color: green; }
+  </style>
+</head>
+<body>
+  <h1>Chat Sederhana</h1>
+  <input id="pesan" placeholder="Ketik pesan..." />
+  <button onclick="kirim()">Kirim</button>
+  <ul id="chat"></ul>
+
+  <script>
+    const nama = prompt("Masukkan nama Anda:") || 'User_' + Math.floor(Math.random() * 1000);
+    const ws = new WebSocket('ws://' + window.location.host);
+    const chat = document.getElementById('chat');
+    const pesan = document.getElementById('pesan');
+
+    ws.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      const li = document.createElement('li');
+      const isSaya = data.pengirim === nama;
+      li.textContent = (isSaya ? 'Saya' : data.pengirim) + ': ' + data.pesan;
+      li.className = isSaya ? 'saya' : 'lain';
+      chat.appendChild(li);
+    };
+
+    function kirim() {
+      if (pesan.value.trim() !== '') {
+        const data = {
+          pengirim: nama,
+          pesan: pesan.value.trim()
+        };
+        ws.send(JSON.stringify(data));
+        pesan.value = '';
+      }
+    }
+  </script>
+</body>
+</html>
